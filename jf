@@ -1,0 +1,130 @@
+# Bikin ulang file HTML dengan carousel untuk ESTOR top up
+
+html_code = """
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESTOR Top Up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000, #3a2c0f);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      color: gold;
+    }
+    .carousel {
+      position: relative;
+      max-width: 600px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255,215,0,0.5);
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slides img {
+      width: 600px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .packages {
+      margin: 20px;
+    }
+    .package {
+      background: rgba(255,215,0,0.1);
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px auto;
+      max-width: 400px;
+    }
+    .package h3 {
+      margin: 5px 0;
+      color: gold;
+    }
+    .price {
+      text-decoration: line-through;
+      color: #aaa;
+    }
+    .discounted {
+      font-size: 22px;
+      color: #00ff90;
+      font-weight: bold;
+    }
+    .wa-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: gold;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>ESTOR Top Up</header>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="slides" id="slides">
+      <img src="poster1.jpg" alt="Roblox Sultan 1" />
+      <img src="poster2.jpg" alt="Roblox Sultan 2" />
+      <img src="poster3.jpg" alt="Roblox Sultan 3" />
+      <img src="poster4.jpg" alt="Roblox Sultan 4" />
+    </div>
+  </div>
+
+  <!-- Paket Top Up -->
+  <div class="packages">
+    <div class="package">
+      <h3>80 Robux</h3>
+      <div class="price">Rp 25.000</div>
+      <div class="discounted">Rp 20.000</div>
+    </div>
+    <div class="package">
+      <h3>400 Robux</h3>
+      <div class="price">Rp 125.000</div>
+      <div class="discounted">Rp 95.000</div>
+    </div>
+    <div class="package">
+      <h3>800 Robux</h3>
+      <div class="price">Rp 250.000</div>
+      <div class="discounted">Rp 190.000</div>
+    </div>
+  </div>
+
+  <a class="wa-btn" href="https://wa.me/6283181702251" target="_blank">Chat Admin via WhatsApp</a>
+
+  <script>
+    let index = 0;
+    const slides = document.getElementById('slides');
+    const total = slides.children.length;
+    function showSlide() {
+      index = (index + 1) % total;
+      slides.style.transform = `translateX(-${index * 600}px)`;
+    }
+    setInterval(showSlide, 3000);
+  </script>
+</body>
+</html>
+"""
+
+# Simpan ke file HTML
+file_path = "/mnt/data/estor_topup_carousel.html"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(html_code)
+
+file_path
