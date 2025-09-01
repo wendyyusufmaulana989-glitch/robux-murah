@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>estor — Top Up Roblox Murah & Terpercaya</title>
+  <meta name="description" content="estor - Top Up Robux cepat, aman, dengan jaminan uang kembali & garansi akun sultan." />
+  <style>
+    :root{
+      --bg:#050505; --card:#111; --gold:#D4AF37; --muted:#bfbfbf; --accent:#222;
+      --maxw:1100px; --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:#fff}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{font-weight:800;letter-spacing:1px;color:var(--gold);font-size:26px}
+    nav{display:flex;gap:16px;align-items:center}
+    nav a{color:var(--muted);font-size:14px}
+    .btn{background:var(--gold);color:#000;padding:10px 14px;border-radius:10px;font-weight:700}
+
+    /* Hero */
+    .hero{padding:36px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);display:flex;gap:24px;align-items:center}
+    .hero-left{flex:1}
+    .hero h1{font-size:34px;margin:0 0 8px;color:#fff}
+    .hero p{margin:0 0 16px;color:var(--muted)}
+    .badge{display:inline-block;background:rgba(212,175,55,0.12);color:var(--gold);padding:6px 10px;border-radius:999px;font-weight:700;margin-bottom:14px}
+
+    /* slider */
+    .slider{position:relative;overflow:hidden;border-radius:12px;height:120px;background:linear-gradient(90deg,#0b0b0b,#0f0f0f);flex:0 0 420px}
+    .slides{display:flex;transition:transform 0.7s ease}
+    .slide{min-width:100%;padding:18px;display:flex;align-items:center;gap:12px}
+    .slide h3{margin:0 0 6px}
+    .slide p{margin:0;color:var(--muted)}
+
+    /* Products */
+    .products{margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+    .card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .card h4{margin:0 0 8px}
+    .price{font-weight:800;font-size:18px;color:var(--gold)}
+    .small{color:var(--muted);font-size:13px}
+    .card input[type="number"]{width:100%;padding:8px;margin-top:8px;border-radius:8px;border:1px solid #222;background:#0b0b0b;color:#fff}
+    .card .buy{margin-top:10px;width:100%;padding:10px;border-radius:8px;border:none;background:var(--gold);color:#000;font-weight:800}
+
+    /* floating whatsapp */
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:linear-gradient(45deg,var(--gold),#cda44a);color:#000;padding:12px;border-radius:999px;box-shadow:0 8px 30px rgba(0,0,0,0.6);z-index:60}
+
+    /* modal */
+    .modal{position:fixed;left:0;top:0;width:100%;height:100%;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:80}
+    .modal.open{display:flex}
+    .modal .box{width:92%;max-width:560px;background:#0b0b0b;padding:18px;border-radius:12px;border:1px solid rgba(212,175,55,0.09)}
+    .row{display:flex;gap:10px}
+
+    /* karcis */
+    .ticket{background:#050505;padding:18px;border-radius:12px;border:2px solid var(--gold);color:#fff}
+    .ticket pre{white-space:pre-wrap;font-family:inherit}
+
+    /* guarantee */
+    .guarantee{margin-top:26px;padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(212,175,55,0.06), transparent);display:flex;align-items:center;justify-content:space-between}
+    .gleft{max-width:70%}
+    .cta-secondary{background:transparent;border:2px solid var(--gold);padding:10px 14px;border-radius:10px;color:var(--gold);font-weight:700}
+
+    footer{margin-top:40px;padding:18px 0;color:var(--muted);font-size:13px}
+
+    @media (max-width:720px){.hero{flex-direction:column}.slider{flex:unset;width:100%;height:140px}}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">estor</div>
+      <nav>
+        <a href="#products">Produk Robux</a>
+        <a href="#cek">Cek Transaksi</a>
+        <a href="#blog">Blog</a>
+        <a href="#login" id="link-login">Login</a>
+        <a class="btn" href="#products">Top Up Sekarang</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="badge">Sudah melayani 2.350 customer</div>
+          <h1>Top Up Robux Murah & Terpercaya</h1>
+          <p>Cepat — Aman — CS 24 Jam. Masukkan User ID Roblox, pilih paket, dan bayar dengan QRIS / Dana / OVO / GoPay.</p>
+          <div style="display:flex;gap:10px;margin-top:12px">
+            <a class="btn" href="#products">Top Up Sekarang</a>
+            <a class="cta-secondary" href="#cek">Cek Transaksi</a>
+          </div>
+        </div>
+        <div class="slider" aria-hidden="false">
+          <div class="slides" id="slides">
+            <div class="slide">
+              <div>
+                <h3>Join Our WhatsApp Channel</h3>
+                <p>Gabung channel kami untuk promo & info top up terbaru.</p>
+                <div style="margin-top:8px"><a class="btn" href="https://wa.me/62877849467736" target="_blank">Join Channel</a></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div>
+                <h3>Harga Spesial untuk Pembeli Pertama</h3>
+                <p>Harga spesial muncul otomatis di tiap paket (tanpa menulis diskon).</p>
+                <div style="margin-top:8px"><a class="btn" href="#products">Dapatkan Sekarang</a></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div>
+                <h3>Cepat, Aman & Terpercaya</h3>
+                <p>CS 24 Jam siap membantu verifikasi & refund jika terjadi kendala.</p>
+                <div style="margin-top:8px"><a class="btn" href="#products">Top Up</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products">
+        <h2 style="margin-top:22px">Paket Robux</h2>
+        <div class="products" id="product-list">
+          <!-- Cards generated by JS -->
+        </div>
+      </section>
+
+      <section class="guarantee">
+        <div class="gleft">
+          <div style="font-weight:800;color:var(--gold);margin-bottom:6px">Jaminan & Garansi</div>
+          <div style="color:var(--muted)">✅ Jaminan 100% Uang Kembali apabila transaksi gagal.<br>🎁 Garansi Akun Sultan Roblox bila Robux tidak terkirim setelah 2x transaksi.</div>
+        </div>
+        <div>
+          <a class="btn" href="#products">Top Up Sekarang & Rasakan Aman-Nya</a>
+        </div>
+      </section>
+
+      <section id="cek" style="margin-top:22px">
+        <h3>Cek Transaksi</h3>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+          <input id="cek-input" placeholder="Masukkan No. Transaksi atau Email" style="padding:10px;border-radius:8px;border:1px solid #222;background:#0b0b0b;color:#fff" />
+          <button class="btn" onclick="cekTransaksi()">Cek</button>
+        </div>
+        <div id="cek-result" style="margin-top:12px;color:var(--muted)"></div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>estor — Top Up Roblox Murah & Terpercaya. Sudah melayani 2.350 customer.</div>
+        <div>Contact: <a href="https://wa.me/62877849467736" target="_blank">0878-4946-7736 (WA)</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <a class="whatsapp" href="https://wa.me/62877849467736" target="_blank">Chat CS 24 Jam</a>
+
+  <!-- Modals -->
+  <div id="modal-checkout" class="modal">
+    <div class="box">
+      <h3>Checkout</h3>
+      <div id="checkout-content"></div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn" id="confirm-order">Konfirmasi Pesanan</button>
+        <button class="cta-secondary" onclick="closeModal('modal-checkout')">Batal</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ticket" class="modal">
+    <div class="box">
+      <h3>Bukti Transaksi (Karcis)</h3>
+      <div class="ticket" id="ticket-content"></div>
+      <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end">
+        <button class="btn" onclick="printKarcis()">Download / Print Karcis</button>
+        <button class="btn" id="send-wa">Kirim ke WhatsApp CS</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Sample base market prices (IDR) - replace or fetch dynamically in production
+    const basePrices = [
+      {r:80, price:15000},
+      {r:400, price:65000},
+      {r:800, price:120000},
+      {r:1700, price:240000},
+      {r:3500, price:420000}
+    ];
+
+    function formatIDR(n){return 'Rp ' + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
+
+    const productList = document.getElementById('product-list');
+    basePrices.forEach(p=>{
+      const special = Math.round(p.price * 0.7); // price * 70%
+      const card = document.createElement('div'); card.className='card';
+      card.innerHTML = `
+        <h4>${p.r} Robux</h4>
+        <div class="small">Estimasi: Instan / 1-30 menit</div>
+        <div style="margin-top:8px" class="price">${formatIDR(special)} <div style="font-size:12px;color:var(--muted);font-weight:600">Harga Spesial untuk Pembeli Pertama</div></div>
+        <div style="margin-top:8px" class="small">Masukkan User ID Roblox</div>
+        <input type="number" placeholder="Contoh: 123456789" data-base="${p.price}" data-robux="${p.r}" />
+        <button class="buy" onclick="startCheckout(this)">Beli Sekarang</button>
+      `;
+      productList.appendChild(card);
+    });
+
+    // Simple slider to the right
+    let slideIndex=0; const slidesEl=document.getElementById('slides');
+    function showNextSlide(){
+      slideIndex = (slideIndex+1) % slidesEl.children.length;
+      slidesEl.style.transform = `translateX(-${slideIndex*100}%)`;
+    }
+    setInterval(showNextSlide,4000);
+
+    // Checkout flow
+    function startCheckout(btn){
+      const card = btn.closest('.card');
+      const input = card.querySelector('input');
+      const userId = input.value.trim();
+      if(!userId){alert('Masukkan User ID Roblox terlebih dahulu'); input.focus(); return}
+      const robux = input.getAttribute('data-robux');
+      const base = parseInt(input.getAttribute('data-base'));
+      const special = Math.round(base * 0.7);
+      const email = localStorage.getItem('estor_email') || '';
+      const checkout = document.getElementById('checkout-content');
+      checkout.innerHTML = `
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div><strong>Paket:</strong> ${robux} Robux</div>
+          <div><strong>User ID:</strong> ${userId}</div>
+          <div><strong>Email:</strong> <input id="chk-email" placeholder="email@domain.com" value="${email}" style="width:100%;padding:8px;border-radius:6px;background:#0b0b0b;border:1px solid #222;color:#fff"/></div>
+          <div><strong>Total Bayar:</strong> ${formatIDR(special)}</div>
+          <div><strong>Pilih Metode Pembayaran:</strong></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px">
+            <button class="cta-secondary" data-method="QRIS">QRIS</button>
+            <button class="cta-secondary" data-method="DANA">Dana</button>
+            <button class="cta-secondary" data-method="OVO">OVO</button>
+            <button class="cta-secondary" data-method="GOPAY">GoPay</button>
+          </div>
+        </div>
+      `;
+      // pick method UI
+      checkout.querySelectorAll('.cta-secondary').forEach(b=>b.onclick=()=>{checkout.querySelectorAll('.cta-secondary').forEach(x=>x.style.opacity=0.6);b.style.opacity=1;checkout.dataset.method=b.getAttribute('data-method')});
+
+      document.getElementById('confirm-order').onclick = function(){
+        const emailVal = document.getElementById('chk-email').value.trim();
+        if(!emailVal){alert('Masukkan email untuk konfirmasi');return}
+        localStorage.setItem('estor_email', emailVal);
+        const method = checkout.dataset.method || 'QRIS';
+        const tx = createTransaction({robux, userId, email:emailVal, total:special, method});
+        closeModal('modal-checkout');
+        showTicket(tx);
+      }
+
+      openModal('modal-checkout');
+    }
+
+    function createTransaction({robux,userId,email,total,method}){
+      const now = new Date();
+      const y = now.getFullYear(), m = String(now.getMonth()+1).padStart(2,'0'), d = String(now.getDate()).padStart(2,'0');
+      const hh = String(now.getHours()).padStart(2,'0'), mm = String(now.getMinutes()).padStart(2,'0');
+      const id = 'ESTOR-'+y+m+d+'-'+Math.floor(Math.random()*9000+1000);
+      const tx = {id, date:`${d}/${m}/${y} - ${hh}:${mm}`, robux, userId, email, total, method, status:'Menunggu Verifikasi'};
+      // store minimal for cek transaksi (in memory/localStorage)
+      let db = JSON.parse(localStorage.getItem('estor_tx')||'[]'); db.push(tx); localStorage.setItem('estor_tx', JSON.stringify(db));
+      return tx;
+    }
+
+    function showTicket(tx){
+      // ensure karcis shows once per tx per session
+      const shownKey = 'karcis_shown_'+tx.id;
+      if(sessionStorage.getItem(shownKey)){
+        alert('Karcis sudah ditampilkan untuk transaksi ini. Cek pesan di WhatsApp jika perlu.'); return
+      }
+      sessionStorage.setItem(shownKey, '1');
+      const el = document.getElementById('ticket-content');
+      el.innerHTML = `\n<pre>No. Transaksi : ${tx.id}\nTanggal       : ${tx.date}\nEmail         : ${tx.email}\nUser ID Roblox: ${tx.userId}\nProduk        : ${tx.robux} Robux\nTotal Bayar   : ${formatIDR(tx.total)}\nMetode Bayar  : ${tx.method}\nStatus        : ${tx.status}\n\n✅ Jaminan 100% Uang Kembali apabila transaksi gagal\n🎁 Garansi Akun Sultan Roblox bila Robux tidak terkirim setelah 2x transaksi\n\nScreenshot bukti ini lalu kirim ke WhatsApp CS untuk verifikasi\n</pre>`;
+      document.getElementById('send-wa').onclick = ()=>{sendToWA(tx)};
+      openModal('modal-ticket');
+    }
+
+    function sendToWA(tx){
+      const number = '62877849467736';
+      const text = `Halo CS estor, saya sudah melakukan order.%0ANo. Transaksi: ${tx.id}%0AEmail: ${tx.email}%0AUser ID: ${tx.userId}%0AMetode: ${tx.method}%0ATotal: ${formatIDR(tx.total)}%0A(Saya lampirkan screenshot bukti pembayaran)`;
+      window.open(`https://wa.me/${number}?text=${text}`,'_blank');
+    }
+
+    function printKarcis(){
+      const content = document.getElementById('ticket-content').innerHTML;
+      const w = window.open('','_blank');
+      w.document.write('<html><head><title>Karcis Transaksi</title><meta name="viewport" content="width=device-width,initial-scale=1"/><style>body{background:#050505;color:#fff;font-family:Inter,Arial;padding:20px}.ticket{border:2px solid '+getComputedStyle(document.documentElement).getPropertyValue('--gold')+';padding:16px;border-radius:8px}</style></head><body><div class="ticket">'+content+'</div></body></html>');
+      w.document.close();
+      w.print();
+    }
+
+    function openModal(id){document.getElementById(id).classList.add('open')}
+    function closeModal(id){document.getElementById(id).classList.remove('open')}
+
+    // cek transaksi (simple localStorage search)
+    function cekTransaksi(){
+      const q = document.getElementById('cek-input').value.trim();
+      const res = document.getElementById('cek-result'); res.innerHTML='';
+      if(!q){res.innerText='Masukkan nomor transaksi atau email.';return}
+      const db = JSON.parse(localStorage.getItem('estor_tx')||'[]');
+      const found = db.filter(t=>t.id===q||t.email===q);
+      if(found.length===0){res.innerText='Transaksi tidak ditemukan.';return}
+      res.innerHTML = found.map(t=>`No: ${t.id} — ${t.robux} Robux — ${t.status} — ${t.date}`).join('<br>');
+    }
+
+    // login/register (simple email only)
+    document.getElementById('link-login').onclick = function(e){e.preventDefault(); const email = prompt('Masukkan email untuk login/daftar:'); if(email){localStorage.setItem('estor_email', email); alert('Login berhasil: '+email);} }
+
+    // initial load: populate product list done earlier
+
+  </script>
+</body>
+</html>
